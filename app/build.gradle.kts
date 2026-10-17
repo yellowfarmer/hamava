@@ -43,6 +43,11 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
     // LAME-backed MP3 encoder. It encodes actual MP3 frames; files are not merely renamed.
-    implementation("com.github.naman14:TAndroidLame:1.1")
+    implementation("com.github.naman14:TAndroidLame:1.1") {
+    exclude(
+        group = "com.android.support",
+        module = "support-compat"
+    )
+}
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
