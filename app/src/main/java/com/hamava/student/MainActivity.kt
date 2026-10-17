@@ -365,7 +365,7 @@ private class Mp3Recorder(private val context: Context) {
                     while (running) {
                         val count = audio.read(pcm, 0, pcm.size)
                         if (count > 0) {
-                            val bytes = encoder.encodeBufferInterLeaved(pcm, count, mp3)
+                            val bytes = encoder.encode(pcm, pcm, count, mp3)
                             if (bytes > 0) out.write(mp3, 0, bytes)
                         }
                     }
