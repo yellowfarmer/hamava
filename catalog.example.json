@@ -1,0 +1,15 @@
+{
+  "songs": [
+    {
+      "id": "lesson-01",
+      "title": "عنوان آهنگ",
+      "artist": "نام خواننده",
+      "year": "2024",
+      "album": "نام آلبوم",
+      "genre": "پاپ",
+      "note": "روی تنفس و شروع جمله تمرکز کنید.",
+      "audio": "lesson-01.mp3",
+      "lyrics": "lesson-01.lrc"
+    }
+  ]
+}
